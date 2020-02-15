@@ -3,13 +3,17 @@
 # Step 1: Write a function that can print out a board. Set up your board as a list, where each index 1-9 corresponds with a number on a number pad,
 # so you get a 3 by 3 board representation.
 
-the_board = [''] * 10
+
+def display_board(board):
+    print('\n' * 20)
+    print(' ' + board[7] + ' | ' + board[8] + ' | ' + board[9])
+    print('----------')
+    print(' ' + board[4] + ' | ' + board[5] + ' | ' + board[6])
+    print('----------')
+    print(' ' + board[1] + ' | ' + board[2] + ' | ' + board[3])
 
 
-def board():
-    print(the_board[7] + '|' + the_board[8] + '|' + the_board[9])
-    print(the_board[4] + '|' + the_board[5] + '|' + the_board[6])
-    print(the_board[1] + '|' + the_board[2] + '|' + the_board[3])
+test_board = ['#', 'X', 'O', 'X', 'O', 'X', 'O', 'X', 'O', 'X']
 
 
 # ---------------------------players----------------------------------
@@ -22,7 +26,7 @@ def player_input():
     marker = ''
 
     while marker != 'X' and marker != 'O':
-        marker = input('Player 1, choose X or O \n')
+        marker = input('Player 1, choose X or O \n').upper()
 
     player1 = marker
 
@@ -34,4 +38,16 @@ def player_input():
 
 
 player_input()
-board()
+
+
+# ---------------------------Board Positions----------------------------------
+# Step 3: Write a function that takes in the board list object, a marker ('X' or 'O'),
+# and a desired position (number 1-9) and assigns it to the board.
+
+
+def place_marker(board, marker, position):
+    board[position] = marker
+
+
+place_marker(test_board, '$', 8)
+display_board(test_board)

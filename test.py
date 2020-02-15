@@ -1,4 +1,4 @@
-the_board = ['#', 'x', '0', 'x', '0', 'x', '0', 'x', '0', 'x']
+the_board = ['']*10
 
 
 def board():
