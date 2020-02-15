@@ -5,7 +5,7 @@
 
 
 def display_board(board):
-    print('\n' * 20)
+    print('\n' * 3)
     print(' ' + board[7] + ' | ' + board[8] + ' | ' + board[9])
     print('----------')
     print(' ' + board[4] + ' | ' + board[5] + ' | ' + board[6])
@@ -49,5 +49,30 @@ def place_marker(board, marker, position):
     board[position] = marker
 
 
-place_marker(test_board, '$', 8)
+place_marker(test_board, 'X', 8)
 display_board(test_board)
+
+# ---------------------------Checking----------------------------------
+# Step 4: Write a function that takes in a board and checks to see if someone has won.
+
+
+def win_check(board, marker):
+
+    # check all ROWS, and check if they share the same markers
+
+    if((board[7] == marker and board[8] == marker and board[9] == marker) or
+        (board[4] == marker and board[5] == marker and board[6] == marker) or
+        (board[1] == marker and board[2] == marker and board[3] == marker) or
+        # check all COLUMNS, and check if they share the same markers
+        (board[3] == marker and board[6] == marker and board[9] == marker) or
+        (board[2] == marker and board[5] == marker and board[8] == marker) or
+        (board[1] == marker and board[4] == marker and board[7] == marker) or
+        # check DIAGONALS, and check if they share the same markers
+        (board[1] == marker and board[5] == marker and board[9] == marker) or
+            (board[7] == marker and board[5] == marker and board[3] == marker)):
+        print("True")
+    else:
+        print("False")
+
+
+win_check(test_board, 'O')
