@@ -50,9 +50,6 @@ def place_marker(board, marker, position):
     board[position] = marker
 
 
-# place_marker(test_board, "X", 8)
-# display_board(test_board)
-
 # ---------------------------Checking----------------------------------
 # Step 4: Write a function that takes in a board and checks to see if someone has won.
 
@@ -76,9 +73,6 @@ def win_check(board, marker):
         return False
 
 
-# win_check(test_board, "O")
-
-
 # ---------------------------Selecting player Randomly----------------------------------
 # Step 5: Write a function that uses the random module to randomly decide which player goes first.
 # You may want to lookup random.randint() Return a string of which player went first.
@@ -92,8 +86,6 @@ def choose_first():
     else:
         return'player 2'
 
-
-# choose_first()
 
 # ---------------------------Checking for free spaces on board----------------------------------
 # Step 6: Write a function that returns a boolean indicating whether a space on the board is freely available.
@@ -206,7 +198,7 @@ while True:
             else:
                 if full_board_check(the_board):
                     display_board(the_board)
-                    print('THERE IS A TIE')
+                    print('THERE IS A TIE!!!')
                     game_on = False
                 else:
                     turn = 'player 1'
