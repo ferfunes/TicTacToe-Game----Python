@@ -162,7 +162,7 @@ while True:
     while game_on:
 
         # PLayer one turn
-        if turn == 'player1':
+        if turn == 'player 1':
             # Show the board
             display_board(the_board)
             # Choose a position
@@ -184,7 +184,7 @@ while True:
                     print('THERE IS A TIE')
                     game_on = False
                 else:
-                    turn = 'player2'
+                    turn = 'player 2'
 
         # PLayer two turn
         else:
@@ -209,7 +209,7 @@ while True:
                     print('THERE IS A TIE')
                     game_on = False
                 else:
-                    turn = 'player1'
+                    turn = 'player 1'
             # Break out of the while loop on replay()
 
     if not replay():
