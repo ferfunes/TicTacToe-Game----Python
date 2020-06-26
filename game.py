@@ -8,7 +8,7 @@ import random
 
 
 def greeting():
-    print('Welcome to the best TIC TAC TOE game')
+    print('Welcome to TIC TAC TOE')
 
 
 def display_board(board):
