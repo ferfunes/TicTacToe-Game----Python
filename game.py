@@ -127,7 +127,7 @@ def replay():
     return choice == 'yes'
 
 
-# ------------------------Building the logic tu run the game-----------------------------
+# ------------------------Building the logic tu run the game-------------------------
 
 greeting()
 
