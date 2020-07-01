@@ -23,7 +23,7 @@ def display_board(board):
 test_board = ['#', 'X', 'O', 'X', 'O', 'X', 'O', 'X', 'O', 'X']
 
 
-# ---------------------------players----------------------------------
+# ---------------------------players------------------------------
 # Step 2: Write a function that can take in a player input and assign their marker as 'X' or 'O'.
 # Think about using while loops to continually ask until you get a correct answer.
 
