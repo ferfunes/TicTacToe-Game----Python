@@ -41,7 +41,7 @@ def player_input():
         return ('O', 'X')
 
 
-# ---------------------------Board Positions---------------------------
+# ---------------------------Board Positions-------------------------
 # Step 3: Write a function that takes in the board list object, a marker ('X' or 'O'),
 # and a desired position (number 1-9) and assigns it to the board.
 
