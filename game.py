@@ -1,8 +1,12 @@
 
+<<<<<<< HEAD
 # ---------------------------Board-------------------------------
+=======
+# ---------------Board--------------
+>>>>>>> b1142f2402e136fbe15ccd758782246f0f428259
 # Step 1: Write a function that can print out a board. Set up your board as a list, where each index 1-9 corresponds with a number on a number pad,
 # so you get a 3 by 3 board representation.
-
+#test
 
 import random
 
@@ -23,7 +27,7 @@ def display_board(board):
 test_board = ['#', 'X', 'O', 'X', 'O', 'X', 'O', 'X', 'O', 'X']
 
 
-# ---------------------------players----------------------------------
+# ---------------------------players------------------------------
 # Step 2: Write a function that can take in a player input and assign their marker as 'X' or 'O'.
 # Think about using while loops to continually ask until you get a correct answer.
 
@@ -41,7 +45,7 @@ def player_input():
         return ('O', 'X')
 
 
-# ---------------------------Board Positions----------------------------------
+# -----------------------Board Positions-------------------------
 # Step 3: Write a function that takes in the board list object, a marker ('X' or 'O'),
 # and a desired position (number 1-9) and assigns it to the board.
 
@@ -95,7 +99,7 @@ def space_check(board, position):
     if board[position] == ' ':
         return True
 
-# ---------------------------Checking if Board is full----------------------------------
+# ---------------------------Checking if Board is full-------------------------------
 # Step 7: Write a function that checks if the board is full and returns a boolean value. True if full, False otherwise.
 
 
@@ -127,7 +131,7 @@ def replay():
     return choice == 'yes'
 
 
-# ---------------------------Building the logic tu run the game----------------------------------
+# ------------------------Building the logic tu run the game-------------------------
 
 greeting()
 
